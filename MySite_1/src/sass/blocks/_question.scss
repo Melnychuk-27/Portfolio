@@ -1,0 +1,54 @@
+.question {
+    padding: 62px 0 79px 0;
+    width: 100%;
+    background: url("../img/plane.jpg") center (center/cover) no-repeat;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 896px;
+        background-color: rgba($color: #fff, $alpha: .7);
+    }
+    &__title {
+        padding: 20px 0 19px;
+        background-color: #25333c;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        display: block;
+        font-size: 14px;
+        font-weight: normal;
+        color: $text-color;
+    }
+}
+
+@media (max-width: 1199px) {
+    .question {
+        padding: 28px 0 36px 0;
+    }
+}
+@media (max-width: 991px) {
+    .question {
+        &__wrapper {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .question {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 321px) {
+    .question {
+        padding: 28px 0 36px 0;
+        &__wrapper {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+}

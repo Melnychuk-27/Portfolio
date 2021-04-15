@@ -1,0 +1,97 @@
+.btn {
+    background-color: $main-color;
+    border: none;
+    border-radius: 40px;
+    color: $text-color;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 1s;
+    &:focus {
+        outline: none; 
+    }
+    &:hover {
+        background-color: #ff3916;
+    }
+    &__form {
+        padding: 18px 31px;
+        background-color: $main-color;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:after {
+            content: '';
+            height: 100%;
+            width: 10px;
+            position: absolute;
+            background-color: $text-color;
+            right: -11px;
+        }
+        &:before {
+            content: '';
+            height: 100%;
+            width: 10px;
+            position: absolute;
+            background-color: $text-color;
+            left: -11px;
+        }
+    }
+    &__card {
+                
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 18px 45px 16px 43px;
+    }
+    &__promo {
+        margin-top: 39px;
+        padding: 23px 45px;
+        background-color: $main-color;
+    }
+    &__menu {
+        padding: 18px 23px;
+        background-color: $main-color;
+        font-size: 12px;
+    }
+    &__question {
+        display: block;
+        margin: 0 auto;
+        margin-top: 17px;
+        padding: 18px 31px;
+        background-color: $main-color;
+    }
+}
+@media (max-width: 1199px) {
+    .btn {
+        border-radius: 40px;
+        &__card {     
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 18px 45px 16px 43px;
+        }
+        &__promo {
+            margin-top: 39px;
+            padding: 23px 45px;
+        }
+        &__menu {
+            display: none;
+        }
+        &__question {
+            margin: 0 auto;
+            margin-top: 17px;
+            padding: 18px 31px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .btn {
+        &__promo {
+            margin-top: 29px;
+            padding: 18px 45px;
+        }
+    }
+}
+
+

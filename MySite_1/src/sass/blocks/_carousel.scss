@@ -1,0 +1,79 @@
+.carusel {
+    padding: 51px 20px 65px;
+    &__title {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #2e2e2e;
+    }
+
+    &__line {
+        @include line;
+    }
+
+    &__subtitle {
+        margin-top: 17px;
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+        color: #2e2e2e;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        margin-top: 19px;
+        margin-bottom: 19px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.57;
+        text-align: justify;
+        color: #3a3a3a;
+        span {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.swiper-container {
+    margin-top: 25px;
+}
+.swiper-slide {
+    padding: 20px;
+    img {
+        display: block;;
+        margin: 0 auto;
+        border-radius: 100%;
+        width: 114px;
+        height: 114px;
+    } 
+}
+.swiper-pagination {
+    display: none;
+}
+.swiper-button-next,.swiper-button-prev  {
+    display: block;
+}
+
+.swiper-button-next {
+    top: 24%;
+    right: 30%;
+    color: $main-color;
+}
+.swiper-button-prev {
+    top: 24%;
+    left: 30%;
+    color: $main-color;
+}
+@media (max-width: 991px) {
+    .swiper-pagination {
+        display: block;
+        transform: scale(1.5);
+    }
+    .swiper-button-next,.swiper-button-prev  {
+        display: none;
+    }
+}
