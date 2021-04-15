@@ -1,0 +1,114 @@
+.advantages {
+    padding: 57px 0 51px 0;
+    background-color: #f6f6f6;
+    &__title{
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 0.88;
+        text-align: center;
+        color: #2e2e2e;
+        margin-bottom: -5px;
+    }
+    &__wrapper{
+        padding: 30px 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        display: flex;
+        width: 540px;
+        padding: 18px 0;
+    }
+    &__icon{
+        margin-right: 10px;
+        img{
+            display: block;
+            width: 65px;
+            height: 65px;
+        }
+    }
+    &__descr{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.57;
+        color: #3a3a3a;
+    }
+    &__subtitle{
+        font-size: 16px;
+        font-weight: bold;
+        color: $main-color;
+    }
+}
+
+@media (max-width: 1199px) {
+    .advantages {
+        padding: 37px 20px;
+        &__wrapper{
+            justify-content: center;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            padding: 36px 20px 0;
+        }
+        &__icon{
+            img{
+                margin: 0 auto;
+                width: 65px;
+                height: 65px;
+            }
+        }
+        &__descr{
+            text-align: justify;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .advantages {
+        padding: 27px 20px;
+        &__title{
+            line-height: 1.2;
+        }
+        &__wrapper{
+            margin-top: 10px;
+            justify-content: center;
+        }
+        &__item{
+            width: calc(50% - 20px);
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+        &__icon{
+            img{
+                margin: 0 auto;
+                width: 65px;
+                height: 65px;
+            }
+        }
+        &__descr{
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.57;
+            text-align: justify;
+        }
+        &__subtitle{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .advantages {
+        padding: 17px 20px 10px;
+        &__item {
+            width: 100%;
+        }
+    }
+}
